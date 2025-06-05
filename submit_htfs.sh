@@ -13,11 +13,9 @@
 script_directory_path=/data1/choderaj/pathilm/FEC/abl/scripts
 perses_env_name=perses
 
-# PROTEIN_FILE=/data1/choderaj/pathilm/FEC/abl/1_solvation_equilibrium/apo_equilibrated.pdb
 # PROTEIN_FILE=/data1/choderaj/pathilm/FEC/abl/0_ABL_input/ABL_input_protein.pdb # THIS WORKS FOR APO
-PROTEIN_FILE=/data1/choderaj/pathilm/FEC/abl/0_ABL_input/new_input/ABL_input_protein.pdb
-LIGAND_FILE=/data1/choderaj/pathilm/FEC/abl/0_ABL_input/new_input/ABL_ATP_ligand_2.sdf
-# COMPLEX_FILE=/data1/choderaj/pathilm/FEC/abl/0_ABL_input/ABL_input_protonated.pdb
+PROTEIN_FILE=/data1/choderaj/pathilm/FEC/abl/0_ABL_input/ABL_input_protein.pdb
+LIGAND_FILE=/data1/choderaj/pathilm/FEC/abl/0_ABL_input/ABL_ATP_ligand.sdf
 MUTATION=THR315ILE
 DIRECTORY_NAME=/data1/choderaj/pathilm/FEC/abl/2_HTFs
 MUTANT_CHAIN=A
