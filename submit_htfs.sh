@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
-#SBATCH --time=2:00
+#SBATCH --time=10:00
 #SBATCH --output=/data1/choderaj/pathilm/FEC/abl/2_HTFs/generate_htfs-%j.out
 #SBATCH --error=/data1/choderaj/pathilm/FEC/abl/2_HTFs/generate_htfs-%j.stderr
 #SBATCH --partition=cpushort
 #SBATCH -n 1
 #SBATCH --mem-per-cpu=64G
 #SBATCH --job-name=htf.0
-
-# run with https://github.com/choderalab/perses/commit/c790a780a20367c7415a86d50879e0983456d92b
-# SBATCH --gpus=1
 
 script_directory_path=/data1/choderaj/pathilm/FEC/abl/scripts
 perses_env_name=perses
