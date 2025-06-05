@@ -116,62 +116,6 @@ platform = mm.Platform.getPlatformByName("CPU")
 platform.setPropertyDefaultValue(property="Threads", value=str(1))
 
 ###################################################################################################
-# test to add ATP to small molecule residue template generator
-# from openmm.app import *
-# from openmm import *
-# # from openff.toolkit import *
-# # from openmoltools import utils, forcefield_generators
-# # from openmoltools.forcefield_generators import generateResidueTemplate
-# # from openmoltools.forcefield_generators import generateForceFieldFromMolecules
-# from openff.toolkit.utils import get_data_file_path
-# from openmmforcefields.generators import SMIRNOFFTemplateGenerator
-# from openff.toolkit.topology import Molecule
-# from openmm.app import ForceField
-
-# # from perses.utils.openeye import createOEMolFromSDF
-
-# # pdbfile = PDBFile(args.protein_path)
-# # sdf_filepath = get_data_file_path(args.ligand_path)
-# # molecule = Molecule.from_file(f'{args.ligand_path}', file_format='sdf')
-
-# # # molecule.assign_partial_charges('ATP')
-# # gen = SMIRNOFFTemplateGenerator(molecules=molecule)
-
-# # forcefield = ForceField('amber/protein.ff14SB.xml')
-
-# # # ##does not work:
-# # # # forcefield = ForceField('charmm36.xml')
-
-# # forcefield.registerTemplateGenerator(gen.generator)
-
-
-# # # Make OpenEye object from SDF
-# # molecule = createOEMolFromSDF(args.ligand_path, add_hydrogens=False, allow_undefined_stereo=True)
-# # # oemol = molecule.to_openeye()
-# # template, params = generateResidueTemplate([molecule],normalize=False)
-
-# # # system = system_generator.create_system(pdbfile.topology, molecules=molecules)
-# # with open('template.xml', 'w') as output:
-# #     output.write(template, params)
-# # # forcefield_generators.generateForceFieldFromMolecules
-
-
-# # # parameterize ligand
-# molecule = createOEMolFromSDF(args.ligand_path, add_hydrogens=False, allow_undefined_stereo=True)
-# oemol = molecule.to_openeye()
-# oemol.name = 'ATP'
-# oemol.assign_partial_charges('am1bcc')
-# from openmmforcefields.generators import SMIRNOFFTemplateGenerator
-# smir = SMIRNOFFTemplateGenerator(molecules=ligand_molecule)
-# forcefield = ForceField('charmm36.xml','charmm/waters_ions_tip3p_pme_b.xml')
-# forcefield.registerTemplateGenerator(smir.generator)
-
-# # modeller.addSolvent(forcefield, model='tip3p', padding=1*nanometer, 
-# #                     ionicStrength=0.1*molar, boxShape='dodecahedron' )
-
-
-
-###################################################################################################
 
 # make the system
 solvent_delivery = PointMutationExecutor(
